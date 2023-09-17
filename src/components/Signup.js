@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <div id="modalIndex">
       <div
-        className="modal fade overflow-hidden"
+        className="modal fade"
         id="exampleModalToggle"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
@@ -248,7 +248,7 @@ const Signup = () => {
         </div>
       </div>
       <div
-        className="modal fade overflow-hidden"
+        className="modal fade"
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
