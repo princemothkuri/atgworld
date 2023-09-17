@@ -9,6 +9,10 @@
   grid-template-columns: 1fr 5fr;
 }
 
+.collapse {
+  /* z-index: 1; */
+}
+
 /* banner */
 
 .bgImage {
@@ -150,6 +154,10 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .collapse {
+    z-index: -2;
   }
 
   .feedContainer {

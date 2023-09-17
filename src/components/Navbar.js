@@ -24,13 +24,17 @@ const Navbar = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="ms-auto mb-2 mb-lg-0">
+          <div
+            className="collapse navbar-collapse"
+            // tabindex="-2"
+            id="navbarSupportedContent"
+          >
+            <div className="ms-auto mt-5 mt-lg-0 mb-2 mb-lg-0">
               <div
                 className="navSearch"
                 // className=" d-flex justify-content-center align-items-center"

@@ -10,8 +10,11 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import Home from "./Home";
+import Modal from "./Modal";
 
 const Feed = () => {
+  const [showModal, setShowModal] = useState(false);
+  const closeModal = () => setShowModal(false);
   return (
     <>
       <Home />
@@ -83,10 +86,12 @@ const Feed = () => {
                   border: "none",
                 }}
                 className="d-flex justify-content-center align-items-center gap-1"
+                onClick={() => setShowModal(true)}
               >
                 <GroupAddIcon style={{ width: "22px", height: "22px" }} />
                 Join Group
               </button>
+              {showModal && <Modal closeModal={closeModal} />}
             </div>
           </div>
           <hr style={{ color: "#e0e0e0", border: "#e0e0e0 1px solid" }} />
