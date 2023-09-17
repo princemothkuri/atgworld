@@ -3,7 +3,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const Signup = () => {
   return (
-    <>
+    <div id="modalIndex">
       <div
         className="modal fade overflow-hidden"
         id="exampleModalToggle"
@@ -451,7 +451,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

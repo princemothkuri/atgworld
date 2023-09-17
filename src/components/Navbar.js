@@ -24,15 +24,16 @@ const Navbar = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse"
-            // tabindex="-2"
+            tabindex="-1"
             id="navbarSupportedContent"
+            style={{ zIndex: "1" }}
           >
             <div className="ms-auto mt-5 mt-lg-0 mb-2 mb-lg-0">
               <div
